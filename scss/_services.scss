@@ -1,0 +1,125 @@
+.services {
+    padding-top: 100px;
+    padding-bottom: 150px;    
+}
+
+.box_text_services {
+    text-align: center;
+    margin-bottom: 87px;
+    
+    .h3_box_services {
+        color: #394b50;
+        font-family: 'Gotham';
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 900;
+        letter-spacing: -0.75px;
+        text-transform: uppercase;   
+        
+        &::selection {
+            background-color: #394b50;
+            color: #ffffff;
+        }
+    }
+    
+    .p_box_services {
+        color: #394b50;
+        font-family: 'Open Sans';
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 300;
+
+        &::selection {
+            background-color: #394b50;
+            color: #ffffff;
+        }
+    }
+}
+
+.section_service {
+    display: inline-block;
+    vertical-align: top;
+    width: 521px;
+
+    &:focus {
+        outline: 1px solid #f6772c;
+    }
+    &:nth-child(2n+2) {
+        margin-left: 128px;
+    }    
+    &:nth-child(n+3) {
+        margin-top: 79px;
+    }    
+    &:hover .icon_fa {
+        color: white;
+        text-shadow: 0px -2px 2px #f6772c, 2px 0px 2px #f6772c, 0px 2px 2px #f6772c, -2px 0px 2px #f6772c;
+    }    
+    &:focus-within .icon_fa {
+        color: white;
+        text-shadow: 0px -2px 2px #f6772c, 2px 0px 2px #f6772c, 0px 2px 2px #f6772c, -2px 0px 2px #f6772c;
+    }
+
+    .icon_fa {
+        display: inline-block;
+        vertical-align: top;
+        width: 85px;
+        font-family: 'Font Awesome';
+        font-size: 50px;
+        color: #ffffff;
+        text-shadow: 0px -2px 2px #709dca, 2px 0px 2px #709dca, 0px 2px 2px #709dca, -2px 0px 2px #709dca;
+
+        &::selection {
+            background-color: none;
+            color: none;
+        }
+    }
+
+    .retina_icon_fa {
+        width: 84px;
+        margin-left: 1px;
+    }
+    
+    .flat_icon_fa {
+        width: 69px;
+        margin-left: 16px;
+    }
+
+    .small_size {
+        font-size: 45px;
+    }
+
+    .box_all_text {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 436px;
+        
+        .h4_section_service {
+            margin-bottom: 13px;
+            color: #394b50;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            text-transform: uppercase;
+            
+            &::selection {
+                background-color: #394b50;
+                color: #ffffff;
+            }
+        }
+
+        .p_section_service {
+            overflow: hidden;
+            color: #7b7b7b;
+            font-family: "Open Sans";
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 22px;
+
+            &::selection {
+                background-color: #7b7b7b;
+                color: #ffffff;
+            }
+        }
+    }
+}

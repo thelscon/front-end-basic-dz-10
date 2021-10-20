@@ -1,0 +1,155 @@
+@import '_variables.scss';
+
+@font-face {
+    font-family: 'Font Awesome';
+    src: url($path_fonts + 'FontAwesome/fontawesome-webfont.eot?v=4.7.0');
+    src: url($path_fonts + 'FontAwesome/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+    url($path_fonts + 'FontAwesome/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+    url($path_fonts + 'FontAwesome/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+    url($path_fonts + 'FontAwesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+    url($path_fonts + 'FontAwesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Lato';
+    src: url($path_fonts + 'Lato-Light/Lato-Light.eot');
+    src: url($path_fonts + 'Lato-Light/Lato-Light.eot?#iefix') format('embedded-opentype'),
+        url($path_fonts + 'Lato-Light/Lato-Light.woff2') format('woff2'),
+        url($path_fonts + 'Lato-Light/Lato-Light.woff') format('woff'),
+        url($path_fonts + 'Lato-Light/Lato-Light.ttf') format('truetype'),
+        url($path_fonts + 'Lato-Light/Lato-Light.svg#Lato-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face { 
+    font-family: 'Lato';
+    src: url($path_fonts + 'Lato-Regular/Lato-Regular.eot');
+    src: url($path_fonts + 'Lato-Regular/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url($path_fonts + 'Lato-Regular/Lato-Regular.woff2') format('woff2'),
+        url($path_fonts + 'Lato-Regular/Lato-Regular.woff') format('woff'),
+        url($path_fonts + 'Lato-Regular/Lato-Regular.ttf') format('truetype'),
+        url($path_fonts + 'Lato-Regular/Lato-Regular.svg#Lato-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url($path_fonts + 'Lato-Bold/Lato-Bold.eot');
+    src: url($path_fonts + 'Lato-Bold/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+        url($path_fonts + 'Lato-Bold/Lato-Bold.woff2') format('woff2'),
+        url($path_fonts + 'Lato-Bold/Lato-Bold.woff') format('woff'),
+        url($path_fonts + 'Lato-Bold/Lato-Bold.ttf') format('truetype'),
+        url($path_fonts + 'Lato-Bold/Lato-Bold.svg#Lato-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url($path_fonts + 'BrandonGrotesque-Bold/BrandonGrotesque-Bold.eot');
+    src: url($path_fonts + 'BrandonGrotesque-Bold/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+        url($path_fonts + 'BrandonGrotesque-Bold/BrandonGrotesque-Bold.woff2') format('woff2'),
+        url($path_fonts + 'BrandonGrotesque-Bold/BrandonGrotesque-Bold.woff') format('woff'),
+        url($path_fonts + 'BrandonGrotesque-Bold/BrandonGrotesque-Bold.ttf') format('truetype'),
+        url($path_fonts + 'BrandonGrotesque-Bold/BrandonGrotesque-Bold.svg#BrandonGrotesque-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url($path_fonts + 'Gotham-Black/Gotham-Black.eot');
+    src: url($path_fonts + 'Gotham-Black/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+        url($path_fonts + 'Gotham-Black/Gotham-Black.woff2') format('woff2'),
+        url($path_fonts + 'Gotham-Black/Gotham-Black.woff') format('woff'),
+        url($path_fonts + 'Gotham-Black/Gotham-Black.ttf') format('truetype'),
+        url($path_fonts + 'Gotham-Black/Gotham-Black.svg#Gotham-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url($path_fonts + 'OpenSans-Light/OpenSans-Light.eot');
+    src: url($path_fonts + 'OpenSans-Light/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+        url($path_fonts + 'OpenSans-Light/OpenSans-Light.woff2') format('woff2'),
+        url($path_fonts + 'OpenSans-Light/OpenSans-Light.woff') format('woff'),
+        url($path_fonts + 'OpenSans-Light/OpenSans-Light.ttf') format('truetype'),
+        url($path_fonts + 'OpenSans-Light/OpenSans-Light.svg#OpenSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url($path_fonts + 'OpenSans-Regular/OpenSans-Regular.eot');
+    src: url($path_fonts + 'OpenSans-Regular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url($path_fonts + 'OpenSans-Regular/OpenSans-Regular.woff2') format('woff2'),
+        url($path_fonts + 'OpenSans-Regular/OpenSans-Regular.woff') format('woff'),
+        url($path_fonts + 'OpenSans-Regular/OpenSans-Regular.ttf') format('truetype'),
+        url($path_fonts + 'OpenSans-Regular/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 'Font Awesome';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+@import '_header.scss';
+@import '_banner.scss';
+@import '_services.scss';
+@import '_aboutus.scss';
+@import '_pricing.scss';
+@import '_howitworks.scss';
+@import '_happy.scss';
+@import '_newsletter';
+@import '_footer.scss';
+
+.end {
+    text-align: center;
+    background-color: #709dca;
+}
+
+.h4_end {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 17px;
+    margin-bottom: 15px;    
+    text-align: center;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+
+    &::selection {
+        background-color: #ffffff;
+        color: #709dca;
+    }
+}
+
+
+

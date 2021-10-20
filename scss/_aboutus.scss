@@ -1,0 +1,84 @@
+.aboutus {    
+    position: relative;
+    background-color: #ffc155;
+}
+
+.decor_image {
+    position: absolute;
+    top: 0px;
+    right: 50%;
+    bottom: 0px;
+    left: 0px;
+    background-image: url($path_images + 'bgimage_aboutus.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box_text_aboutus {
+    float: right;
+    width: 50%;
+    padding-top: 157px;
+    padding-bottom: 174px;
+    padding-left: 80px;
+
+    .h3_box_text_aboutus {
+        max-width: 505px;
+        color: #ffffff;
+        font-family: "Gotham";
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 44px;
+        text-transform: uppercase;
+        letter-spacing: -0.75px;
+
+        &::selection {
+            background-color: #ffffff;
+            color: #ffc155;
+        }
+    }
+
+    .p_box_text_aboutus {
+        margin-top: 15px;
+        max-width: 505px;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 24px;
+
+        &::selection {
+            background-color: #ffffff;
+            color: #ffc155;
+        }
+    }
+
+    .button_box_text_aboutus {
+        width: 145px;
+        height: 46px;
+        margin-top: 27px;
+        border: 1px solid #e7ad48;
+        background-color: #ffc155;
+        color: #ffffff;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        border-radius: 2px;
+
+        &:focus {
+            outline: 2px solid #ffffff;
+            background-color: #ffffff;
+            color: #ffc155;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: #ffffff;
+            color: #ffc155;
+        }
+        &::selection {
+            background-color: none;
+            color: none;
+        }
+    }
+}

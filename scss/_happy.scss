@@ -1,0 +1,157 @@
+.happy {
+    background-color: #ffc155;
+    padding-top: 141px;
+    padding-bottom: 160px;
+}
+
+.h3_happy {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Gotham";
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: -0.75px;
+    text-transform: uppercase;
+
+    &::selection {
+        background-color: #ffffff;
+        color: #ffc155;
+    }
+}
+
+.p_happy {
+    margin-bottom: 55px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    &::selection {
+        background-color: #ffffff;
+        color: #ffc155;
+    }
+}
+
+.card_happy {
+    display: inline-block;
+    vertical-align: top;
+    width: 567px;
+    padding-top: 43px;
+    padding-bottom: 47px;
+    background-color: #ffffff;
+
+    &::selection {
+        background-color: none;
+        color: none;
+    }
+    &:nth-child(2n+2) {
+        margin-left: 36px;
+    }
+
+    &:nth-child(2n+2) .p_card_happy {
+        width: 377px;
+    }
+
+    &:nth-child(n+3) {
+        margin-top: 20px;
+    }
+
+    &:nth-child(n+3) .h4_card_happy {
+        margin-left: 183px;
+    }
+
+    .img_card_happy {
+        margin-left: 30px;
+
+        &::selection {
+            background-color: none;
+            color: none;
+        }
+    }        
+
+    .p_card_happy {
+        display: inline-block;
+        vertical-align: top;
+        width: 363px;
+        margin-left: 13px;
+        padding-left: 19px;
+        margin-top: 2px;
+        text-indent: -19px;
+        color: #7b7b7b;
+        font-family: "Open Sans";
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        white-space: pre-wrap;
+
+        &::selection {
+            background-color: #7b7b7b;
+            color: #ffffff;
+        }
+
+        .span_card_happy {
+            vertical-align: sub;
+            margin-right: 7px;
+            color: #7b7b7b;
+            font-family: "Brandon Grotesque";            
+            font-size: 30px;
+            font-weight: 700;
+
+            &::selection {
+                background-color: #7b7b7b;
+                color: #ffffff;
+            }
+        }
+
+        .span_end_one {
+            display: inline-block;
+            margin-left: 98px;
+            margin-top: 15px;
+            vertical-align: top;
+            transform: rotateX(180deg);
+
+            &::selection {
+                background-color: #7b7b7b;
+                color: #ffffff;
+            }
+        }
+
+        .span_end_two {
+            display: inline-block;
+            margin-left: 35px;
+            margin-top: 15px;
+            vertical-align: top;
+            transform: rotateX(180deg);
+        }
+    }
+
+    .h4_card_happy {
+        display: inline-block;
+        vertical-align: top;
+        width: 344px;
+        margin-left: 184px;
+        margin-top: 10px;
+        color: #394b50;
+        font-family: 'Lato';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-transform: uppercase;
+
+        &::selection {
+            background-color: #394b50;;
+            color: #ffffff;
+        }
+
+        .span_h4_card_happy {
+            color: #f6772c;
+
+            &::selection {
+                background-color: #f6772c;
+                color: #ffffff;
+            }
+        }
+    }
+}
